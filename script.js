@@ -52,6 +52,7 @@ var Project1 = (function () {
 
 			/* Currencies List Placeholder (replace with drop-down menu later!) */
 
+<<<<<<< HEAD
 			//drop down menu
 			$("#currencylist").append("<select title=\"currencymenu\" id=\"currencymenu\">" + "</select name>");
 			for (const key in currencies) {
@@ -61,6 +62,18 @@ var Project1 = (function () {
 
 
 
+=======
+
+			//drop down menu
+			$("#currencylist").append("<select title=\"currencymenu\" id=\"currencymenu\">" + "</select name>");
+			for (const key in currencies) {
+
+				$("#currencymenu").append("<option value=\"" + key + "\">" + currencies[key]);
+			}
+
+
+
+>>>>>>> ca6cd4723f4a1dff3fb427627b9a0931a704b6ed
 
 		},
 
@@ -68,9 +81,11 @@ var Project1 = (function () {
 
 		convert: function () {
 
-			var targetCurrency = "GBP"; // replace later!
-
 			// INSERT YOUR CODE HERE
+			/* check currency selection*/
+			var targetCurrency = $("#currencymenu").val().trim();
+
+			/* calulate the exchangee */
 			var selectedRate = rates.rates[targetCurrency];
 			var inputValue = $("#value").val();
 			var result;
