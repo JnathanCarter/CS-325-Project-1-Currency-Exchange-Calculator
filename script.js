@@ -52,9 +52,21 @@ var Project1 = (function () {
 
 			/* Currencies List Placeholder (replace with drop-down menu later!) */
 
+<<<<<<< HEAD
 			var currencymenu = "GBP (" + currencies.GBP + ")"; // replace with <select> later!
 
 			$("#currencylist").html(currencymenu);
+=======
+			//drop down menu
+			$("#currencylist").append("<select title=\"currencymenu\" id=\"currencymenu\">" + "</select name>");
+			for (const key in currencies) {
+
+				$("#currencymenu").append("<option value=\"" + key + "\">" + currencies[key]);
+			}
+
+
+
+>>>>>>> partTwo
 
 		},
 
