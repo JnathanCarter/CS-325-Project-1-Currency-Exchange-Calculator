@@ -23,7 +23,7 @@ var Project1 = (function () {
 
 				/* REPLACE THE NEXT TWO LINES WITH AN AJAX CALL LATER! */
 
-				//rates = JSON.parse(jsonRates); // replace with AJAX call later!
+				rates = JSON.parse(jsonRates); // replace with AJAX call later!
 
 
 				this.init();
