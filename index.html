@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CS 325 Project #1</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+    
+    <form name="testform" id="testform">
+        <fieldset>
+            <legend>Currency Conversion Calculator</legend>
+            <p>Exchange Rate Date: <span id="ratedate"></span></p>
+            <p>Convert to: <span id="currencylist"></span></p>
+            <label for="value">Value (in USD):</label>
+            <input type="number" name="value" id="value">
+            <input type="button" value="Convert" onclick="Project1.onClick();">
+        </fieldset>
+    </form>
+
+    <div id="output"></div>
+
+    <script type="text/javascript">
+        Project1.start();
+    </script>
+    
+</body>
+
+</html>
