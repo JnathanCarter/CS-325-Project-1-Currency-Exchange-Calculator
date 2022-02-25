@@ -23,7 +23,9 @@ var Project1 = (function () {
 
 				/* REPLACE THE NEXT TWO LINES WITH AN AJAX CALL LATER! */
 
-				rates = JSON.parse(jsonRates); // replace with AJAX call later!
+				//rates = JSON.parse(jsonRates); // replace with AJAX call later!
+
+
 				this.init();
 
 				// INSERT AJAX CALL HERE (remember to call that.init() in callback function!
@@ -68,9 +70,11 @@ var Project1 = (function () {
 
 		convert: function () {
 
-			var targetCurrency = "GBP"; // replace later!
-
 			// INSERT YOUR CODE HERE
+			/* check currency selection*/
+			var targetCurrency = $("#currencymenu").val().trim();
+
+			/* calulate the exchangee */
 			var selectedRate = rates.rates[targetCurrency];
 			var inputValue = $("#value").val();
 			var result;
