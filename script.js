@@ -54,6 +54,7 @@ var Project1 = (function () {
 
 			/* Currencies List Placeholder (replace with drop-down menu later!) */
 
+<<<<<<< HEAD
 			//drop down menu
 			$("#currencylist").append("<select title=\"currencymenu\" id=\"currencymenu\">" + "</select name>");
 			for (const key in currencies) {
@@ -63,6 +64,18 @@ var Project1 = (function () {
 
 
 
+=======
+
+			//drop down menu
+			$("#currencylist").append("<select title=\"currencymenu\" id=\"currencymenu\">" + "</select name>");
+			for (const key in currencies) {
+
+				$("#currencymenu").append("<option value=\"" + key + "\">" + currencies[key]);
+			}
+
+
+
+>>>>>>> ca6cd4723f4a1dff3fb427627b9a0931a704b6ed
 
 		},
 
