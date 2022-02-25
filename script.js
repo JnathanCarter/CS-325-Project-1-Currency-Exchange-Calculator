@@ -68,9 +68,11 @@ var Project1 = (function () {
 
 		convert: function () {
 
-			var targetCurrency = "GBP"; // replace later!
-
 			// INSERT YOUR CODE HERE
+			/* check currency selection*/
+			var targetCurrency = $("#currencymenu").val().trim();
+
+			/* calulate the exchangee */
 			var selectedRate = rates.rates[targetCurrency];
 			var inputValue = $("#value").val();
 			var result;
