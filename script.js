@@ -54,7 +54,6 @@ var Project1 = (function () {
 
 			/* Currencies List Placeholder (replace with drop-down menu later!) */
 
-<<<<<<< HEAD
 			//drop down menu
 			$("#currencylist").append("<select title=\"currencymenu\" id=\"currencymenu\">" + "</select name>");
 			for (const key in currencies) {
